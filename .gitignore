@@ -1,0 +1,16 @@
+# Data files are never committed (public data, large files). See README "Data".
+*.h5ad
+*.mtx
+*.mtx.gz
+*.tsv.gz
+*.zip
+*.tar
+*.CEL
+*.CEL.gz
+data/
+results/large/
+.ipynb_checkpoints/
+.DS_Store
+__pycache__/
+.Rhistory
+.RData
