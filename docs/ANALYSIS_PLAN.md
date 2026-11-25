@@ -1,13 +1,13 @@
 # Analysis plan for Aim 2, step 3 onward
 
-Status: version 2, revised 2026-10-23 before any aging or senescence scores were computed (see change log). Any later change is recorded in the change log at the bottom, never made silently.
+Status: version 2.2, revised 2026-11-25 (after subtype labelling, before any aging or senescence scores were computed) (see change log). Any later change is recorded in the change log at the bottom, never made silently.
 
 ## Data
 16,755 DA neurons (clusters 14–18 of step 2) from 18 donors in GSE178265: 8 control, 6 PD, 4 LBD. Raw counts; per-cell donor, status, sex, age, PMI and FACS sort status.
 
 ## Definitions fixed before scoring
-1. **DA subtypes.** Subtypes follow Kamath et al. 2022, using the marker genes reported in that paper (taken from its supplementary tables, not typed from memory). Assignment works in three steps:
-   1. Re-cluster the DA neurons only: normalise, select highly variable genes, run Harmony by library, then Leiden clustering.
+1. **DA subtypes.** Subtypes follow Kamath et al. 2022, using the marker panel of the paper's Figure 1E, downloaded from the authors' own code (GitHub tkamath1/Kamathetal2022, commit cae72e1), not typed from memory. Each subtype is identified by the genes in its name (e.g. SOX6_AGTR1 = SOX6 + AGTR1). Assignment works in three steps:
+   1. Re-cluster the DA neurons only: normalise, select highly variable genes (with every senescence/aging readout gene removed), run Harmony by library, then Leiden clustering (resolution 1.0).
    2. Score each sub-cluster for each Kamath subtype's markers and name it after the subtype with the highest mean marker score.
    3. Check that the SOX6_AGTR1 sub-clusters fall mainly within step 2 cluster 14 and the CALB1 sub-clusters mainly within cluster 18. Report this cross-tabulation.
 
@@ -45,6 +45,7 @@ Status: version 2, revised 2026-10-23 before any aging or senescence scores were
 - Minimum neurons per donor of 10 and 50.
 - AUCell instead of `score_genes`.
 - Leave-one-donor-out for H1.
+- **High-confidence labels only:** H1 repeated without sub-clusters whose SOX6-vs-CALB1 family call is weak (absolute z difference below 0.5) and without SOX6_AGTR1 sub-clusters that lead the next SOX6 subtype by less than 0.25.
 - **Depth adjustment:** H1 repeated after regressing each nucleus's score on its log total counts and number of detected genes, so differences in cell size or sequencing depth between subtypes cannot explain the result.
 
 ## Replication
@@ -57,3 +58,5 @@ A null H1 is reported as a finding. Gene sets, thresholds and tests are not chan
 | Date | Change | Reason |
 | --- | --- | --- |
 | 2026-10-23 | Version 2, made **before any scores were computed**. (1) H1 primary test changed from paired Wilcoxon to paired t-test with effect size and 95% CI; Wilcoxon and a random-slope mixed model kept as supporting; fallback threshold of 10 neurons if fewer than 5 controls qualify. (2) Subtype assignment method specified (re-cluster DA neurons, label by Kamath markers, cross-check against step 2 clusters 14 and 18). (3) CDKN1A and CDKN2A added as secondary readouts; TP53 target sets explicitly excluded as a readout. (4) Depth adjustment added as a sensitivity analysis. | Review found that with 5 qualifying control donors the Wilcoxon test cannot reach p < 0.05; the subtype method was unspecified; SenMayo is weighted toward secreted factors that neurons express weakly; and subtypes may differ in sequencing depth. |
+| 2026-11-25 | Version 2.1, made **before any scores were computed**. (1) Kamath marker source specified: Figure 1E panel from the authors' code, pinned commit. (2) All readout genes (SenMayo, CellAge, brain-aging set, CDKN1A, CDKN2A) removed from the variable genes used to re-cluster. (3) Leiden resolution 1.0; it may be changed only at the labelling checkpoint, only on marker separation, and before scoring. (4) Brain-aging set fixed as MSigDB LU_AGING_BRAIN_UP (Lu et al. 2004); CellAge set fixed as genes whose effect is 'Induces' senescence. (5) H2 interaction computed as `diff ~ disease` on per-donor differences, which is mathematically identical to the planned two-rows-per-donor mixed model and always converges; a version adding sex and age is also reported. (6) AUCell: undetected genes never count as hits. | Testing on simulated data showed that (2) prevents subtype labels being driven by the genes being scored, that the planned H2 mixed model often fails to converge with two rows per donor, and that ties at zero biased AUCell in low-depth cells. Items (1) and (4) make sources that were described generally in v2 exact. |
+| 2026-11-25 | Version 2.2, made at the subtype-labelling checkpoint, **before any scores were computed**. Labels accepted at Leiden resolution 1.0 (21 sub-clusters, all 10 Kamath subtypes found, each showing its defining marker). Added the high-confidence-labels sensitivity analysis. Recorded the pre-specified cross-check: 68% of SOX6_AGTR1 neurons fall in step 2 cluster 14, but only 36% of CALB1 neurons fall in cluster 18 (CALB1_CALCR mainly in cluster 17; CALB1_CRYM_CCDC68 and CALB1_PPP1R17 mainly in cluster 15). | Two sub-clusters had borderline labels (sub-cluster 9, SOX6_AGTR1 vs SOX6_DDT, margin 0.11; sub-cluster 12, CALB1 family call −0.46). The step 2 clusters were coarse, so the CALB1 split across clusters 15–18 reflects the finer DA-only clustering rather than mislabelling; it is reported, not corrected. |
