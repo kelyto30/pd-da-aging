@@ -1,0 +1,98 @@
+sample,DA_candidate,reference_sample,title,geo_accession,source_name_ch1,tissue,sex,age,pmi,disease,status,cause of death,facs classification,10x version,genome build
+pPDCN3839DAPIA030419,10,338,pPDCN3839DAPIA030419,GSM5386676,Human Caudate nucleus,Caudate nucleus,Male,59,15.8,Ctrl,Ctrl,"Colon cancer, cholangiocarcinoma",Negative,V3,hg19
+pPDCN3839DAPIB030419,27,396,pPDCN3839DAPIB030419,GSM5386641,Human Caudate nucleus,Caudate nucleus,Male,59,15.8,Ctrl,Ctrl,"Colon cancer, cholangiocarcinoma",Negative,V3,hg19
+pPDCN3898DAPIA030419,0,102,pPDCN3898DAPIA030419,GSM5386721,Human Caudate nucleus,Caudate nucleus,Male,79,22,Ctrl,Ctrl,Prostate cancer,Negative,V3,hg19
+pPDCN3898DAPIB030419,0,67,pPDCN3898DAPIB030419,GSM5386719,Human Caudate nucleus,Caudate nucleus,Male,79,22,Ctrl,Ctrl,Prostate cancer,Negative,V3,hg19
+pPDCN4340DAPIA030419,12,581,pPDCN4340DAPIA030419,GSM5386628,Human Caudate nucleus,Caudate nucleus,Male,47,12.5,Ctrl,Ctrl,Esophageal cancer with liver mets,Negative,V3,hg19
+pPDCN4340DAPIB030419,14,614,pPDCN4340DAPIB030419,GSM5386629,Human Caudate nucleus,Caudate nucleus,Male,47,12.5,Ctrl,Ctrl,Esophageal cancer with liver mets,Negative,V3,hg19
+pPDCN5730DAPI22119,2,119,pPDCN5730DAPI22119,GSM5386711,Human Caudate nucleus,Caudate nucleus,Male,25,33.75,Ctrl,Ctrl,"Seizure disorder,congenital heart disease",Negative,V3,hg19
+pPDCN5730NeuN22119,2,343,pPDCN5730NeuN22119,GSM5386683,Human Caudate nucleus,Substantia nigra pars compacta,Male,25,33.75,Ctrl,Ctrl,"Seizure disorder,congenital heart disease",NeuN,V3,hg19
+pPDsHSrSNxi1963d200429DAPIA,1,241,pPDsHSrSNxi1963d200429DAPIA,GSM5386694,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,82,6,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi1963d200429DAPIB,1,294,pPDsHSrSNxi1963d200429DAPIB,GSM5386686,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,82,6,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi1963d200429DAPIC,1,255,pPDsHSrSNxi1963d200429DAPIC,GSM5386692,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,82,6,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi1963d200429PosA,6,16,pPDsHSrSNxi1963d200429PosA,GSM5386716,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,82,6,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi1963d200429PosB,3,11,pPDsHSrSNxi1963d200429PosB,GSM5386714,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,82,6,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi1963d200429PosC,6,13,pPDsHSrSNxi1963d200429PosC,GSM5386718,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,82,6,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi1963d200429PosD,2,12,pPDsHSrSNxi1963d200429PosD,GSM5386720,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,82,6,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi1963d200429PosE,0,3,pPDsHSrSNxi1963d200429PosE,GSM5386723,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,82,6,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi2142d200429DAPIA,3,349,pPDsHSrSNxi2142d200429DAPIA,GSM5386697,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,90,2,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi2142d200429DAPIB,4,252,pPDsHSrSNxi2142d200429DAPIB,GSM5386712,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,90,2,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi2142d200429PosA,21,8,pPDsHSrSNxi2142d200429PosA,GSM5386680,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,90,2,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi2544d200429DAPIA,24,223,pPDsHSrSNxi2544d200429DAPIA,GSM5386693,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,89,10,Disease,LBD,Lewy body dementia,Negative,V3,hg19
+pPDsHSrSNxi2544d200429DAPIB,39,445,pPDsHSrSNxi2544d200429DAPIB,GSM5386651,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,89,10,Disease,LBD,Lewy body dementia,Negative,V3,hg19
+pPDsHSrSNxi2544d200429PosA,578,18,pPDsHSrSNxi2544d200429PosA,GSM5386705,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,89,10,Disease,LBD,Lewy body dementia,Positive,V3,hg19
+pPDsHSrSNxi2544d200429PosB,1233,38,pPDsHSrSNxi2544d200429PosB,GSM5386687,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,89,10,Disease,LBD,Lewy body dementia,Positive,V3,hg19
+pPDsHSrSNxi2544d200429PosC,414,69,pPDsHSrSNxi2544d200429PosC,GSM5386706,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,89,10,Disease,LBD,Lewy body dementia,Positive,V3,hg19
+pPDsHSrSNxi2561d200429DAPIA,1,255,pPDsHSrSNxi2561d200429DAPIA,GSM5386715,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,70,21,Disease,LBD,Lewy body dementia,Negative,V3,hg19
+pPDsHSrSNxi2561d200429DAPIB,0,283,pPDsHSrSNxi2561d200429DAPIB,GSM5386702,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,70,21,Disease,LBD,Lewy body dementia,Negative,V3,hg19
+pPDsHSrSNxi2561d200429PosA,8,20,pPDsHSrSNxi2561d200429PosA,GSM5386700,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,70,21,Disease,LBD,Lewy body dementia,Positive,V3,hg19
+pPDsHSrSNxi2561d200429PosB,16,24,pPDsHSrSNxi2561d200429PosB,GSM5386708,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,70,21,Disease,LBD,Lewy body dementia,Positive,V3,hg19
+pPDsHSrSNxi2561d200429PosC,23,40,pPDsHSrSNxi2561d200429PosC,GSM5386675,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,70,21,Disease,LBD,Lewy body dementia,Positive,V3,hg19
+pPDsHSrSNxi2569d200429DAPIA,156,246,pPDsHSrSNxi2569d200429DAPIA,GSM5386699,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,74,13,Disease,LBD,Lewy body dementia,Negative,V3,hg19
+pPDsHSrSNxi2569d200429DAPIB,74,194,pPDsHSrSNxi2569d200429DAPIB,GSM5386717,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,74,13,Disease,LBD,Lewy body dementia,Negative,V3,hg19
+pPDsHSrSNxi2569d200429PosA,1916,28,pPDsHSrSNxi2569d200429PosA,GSM5386691,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,74,13,Disease,LBD,Lewy body dementia,Positive,V3,hg19
+pPDsHSrSNxi3298d200429DAPIA,2,199,pPDsHSrSNxi3298d200429DAPIA,GSM5386710,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,79,22,Ctrl,Ctrl,Prostate cancer,Negative,V3,hg19
+pPDsHSrSNxi3298d200429DAPIB,1,207,pPDsHSrSNxi3298d200429DAPIB,GSM5386713,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,79,22,Ctrl,Ctrl,Prostate cancer,Negative,V3,hg19
+pPDsHSrSNxi3298d200429DAPIC,0,244,pPDsHSrSNxi3298d200429DAPIC,GSM5386701,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,79,22,Ctrl,Ctrl,Prostate cancer,Negative,V3,hg19
+pPDsHSrSNxi3298d200429PosA,9,25,pPDsHSrSNxi3298d200429PosA,GSM5386722,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,79,22,Ctrl,Ctrl,Prostate cancer,Positive,V3,hg19
+pPDsHSrSNxi3298d200429PosB,20,3,pPDsHSrSNxi3298d200429PosB,GSM5386724,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,79,22,Ctrl,Ctrl,Prostate cancer,Positive,V3,hg19
+pPDsHSrSNxi3322d200429DAPIA,2,423,pPDsHSrSNxi3322d200429DAPIA,GSM5386658,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,90,22,Ctrl,Ctrl,Colon cancer,Negative,V3,hg19
+pPDsHSrSNxi3322d200429DAPIB,0,387,pPDsHSrSNxi3322d200429DAPIB,GSM5386682,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,90,22,Ctrl,Ctrl,Colon cancer,Negative,V3,hg19
+pPDsHSrSNxi3322d200429DAPIC,0,172,pPDsHSrSNxi3322d200429DAPIC,GSM5386707,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,90,22,Ctrl,Ctrl,Colon cancer,Negative,V3,hg19
+pPDsHSrSNxi3322d200429PosA,125,89,pPDsHSrSNxi3322d200429PosA,GSM5386698,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,90,22,Ctrl,Ctrl,Colon cancer,Positive,V3,hg19
+pPDsHSrSNxi3322d200429PosB,93,54,pPDsHSrSNxi3322d200429PosB,GSM5386703,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,90,22,Ctrl,Ctrl,Colon cancer,Positive,V3,hg19
+pPDsHSrSNxi3322d200429PosC,83,205,pPDsHSrSNxi3322d200429PosC,GSM5386656,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,90,22,Ctrl,Ctrl,Colon cancer,Positive,V3,hg19
+pPDsHSrSNxi3322d200429PosD,65,220,pPDsHSrSNxi3322d200429PosD,GSM5386672,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,90,22,Ctrl,Ctrl,Colon cancer,Positive,V3,hg19
+pPDsHSrSNxi3322d200429PosE,4,326,pPDsHSrSNxi3322d200429PosE,GSM5386639,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,90,22,Ctrl,Ctrl,Colon cancer,Positive,V3,hg19
+pPDsHSrSNxi3322d200429PosF,24,323,pPDsHSrSNxi3322d200429PosF,GSM5386646,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,90,22,Ctrl,Ctrl,Colon cancer,Positive,V3,hg19
+pPDsHSrSNxi3322d200429PosG,24,245,pPDsHSrSNxi3322d200429PosG,GSM5386637,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,90,22,Ctrl,Ctrl,Colon cancer,Positive,V3,hg19
+pPDsHSrSNxi3322d200429PosH,6,77,pPDsHSrSNxi3322d200429PosH,GSM5386704,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,90,22,Ctrl,Ctrl,Colon cancer,Positive,V3,hg19
+pPDsHSrSNxi3345d200429DAPIA,198,430,pPDsHSrSNxi3345d200429DAPIA,GSM5386648,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,82,12.9,Ctrl,Ctrl,Colon cancer,Negative,V3,hg19
+pPDsHSrSNxi3345d200429DAPIB,246,407,pPDsHSrSNxi3345d200429DAPIB,GSM5386642,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,82,12.9,Ctrl,Ctrl,Colon cancer,Negative,V3,hg19
+pPDsHSrSNxi3345d200429DAPIC,301,179,pPDsHSrSNxi3345d200429DAPIC,GSM5386669,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,82,12.9,Ctrl,Ctrl,Colon cancer,Negative,V3,hg19
+pPDsHSrSNxi3345d200429PosA,2789,37,pPDsHSrSNxi3345d200429PosA,GSM5386678,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,82,12.9,Ctrl,Ctrl,Colon cancer,Positive,V3,hg19
+pPDsHSrSNxi3346d200429DAPIB,8,359,pPDsHSrSNxi3346d200429DAPIB,GSM5386649,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,91,10,Ctrl,Ctrl,Congestive Heart failure,Negative,V3,hg19
+pPDsHSrSNxi3346d200429PosA,601,164,pPDsHSrSNxi3346d200429PosA,GSM5386640,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,91,10,Ctrl,Ctrl,Congestive Heart failure,Positive,V3,hg19
+pPDsHSrSNxi3346d200429PosB,1034,131,pPDsHSrSNxi3346d200429PosB,GSM5386631,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,91,10,Ctrl,Ctrl,Congestive Heart failure,Positive,V3,hg19
+pPDsHSrSNxi3346d200429PosC,763,175,pPDsHSrSNxi3346d200429PosC,GSM5386633,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,91,10,Ctrl,Ctrl,Congestive Heart failure,Positive,V3,hg19
+pPDsHSrSNxi3482d200429DAPIA,23,427,pPDsHSrSNxi3482d200429DAPIA,GSM5386645,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,79,14,Ctrl,Ctrl,Coronary artery disease,Negative,V3,hg19
+pPDsHSrSNxi3482d200429DAPIB,21,385,pPDsHSrSNxi3482d200429DAPIB,GSM5386643,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,79,14,Ctrl,Ctrl,Coronary artery disease,Negative,V3,hg19
+pPDsHSrSNxi3482d200429PosA,1617,51,pPDsHSrSNxi3482d200429PosA,GSM5386632,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,79,14,Ctrl,Ctrl,Coronary artery disease,Positive,V3,hg19
+pPDsHSrSNxi3482d200429PosB,2770,31,pPDsHSrSNxi3482d200429PosB,GSM5386630,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,79,14,Ctrl,Ctrl,Coronary artery disease,Positive,V3,hg19
+pPDsHSrSNxi3873d200429DAPIA,2,547,pPDsHSrSNxi3873d200429DAPIA,GSM5386657,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,76,6.8,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi3873d200429DAPIB,0,486,pPDsHSrSNxi3873d200429DAPIB,GSM5386662,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,76,6.8,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi3873d200429PosA,167,50,pPDsHSrSNxi3873d200429PosA,GSM5386634,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,76,6.8,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi3873d200429PosB,23,62,pPDsHSrSNxi3873d200429PosB,GSM5386661,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,76,6.8,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi3873d200429PosC,43,64,pPDsHSrSNxi3873d200429PosC,GSM5386667,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,76,6.8,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi3873d200429PosD,32,105,pPDsHSrSNxi3873d200429PosD,GSM5386653,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,76,6.8,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi3873d200429PosE,52,93,pPDsHSrSNxi3873d200429PosE,GSM5386636,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,76,6.8,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi3873d200429PosF,39,82,pPDsHSrSNxi3873d200429PosF,GSM5386638,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,76,6.8,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi3887d200429DAPIA,0,276,pPDsHSrSNxi3887d200429DAPIA,GSM5386688,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,82,13.7,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi3887d200429DAPIB,0,337,pPDsHSrSNxi3887d200429DAPIB,GSM5386660,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,82,13.7,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi3887d200429PosA,30,273,pPDsHSrSNxi3887d200429PosA,GSM5386664,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,82,13.7,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi3887d200429PosB,39,239,pPDsHSrSNxi3887d200429PosB,GSM5386652,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,82,13.7,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi4560d200429DAPIA,6,358,pPDsHSrSNxi4560d200429DAPIA,GSM5386671,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,83,13,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi4560d200429DAPIB,13,363,pPDsHSrSNxi4560d200429DAPIB,GSM5386665,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,83,13,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi4560d200429PosA,386,188,pPDsHSrSNxi4560d200429PosA,GSM5386685,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,83,13,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi4560d200429PosB,454,170,pPDsHSrSNxi4560d200429PosB,GSM5386673,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,83,13,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi4560d200429PosC,409,197,pPDsHSrSNxi4560d200429PosC,GSM5386681,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,83,13,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi4560d200429PosD,628,184,pPDsHSrSNxi4560d200429PosD,GSM5386654,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,83,13,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi4560d200429PosE,588,184,pPDsHSrSNxi4560d200429PosE,GSM5386663,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,83,13,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi4568d200429DAPIA,4,391,pPDsHSrSNxi4568d200429DAPIA,GSM5386690,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,78,22.3,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi4568d200429DAPIB,18,420,pPDsHSrSNxi4568d200429DAPIB,GSM5386677,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,78,22.3,Disease,PD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi4568d200429PosA,252,127,pPDsHSrSNxi4568d200429PosA,GSM5386689,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,78,22.3,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi4568d200429PosB,239,157,pPDsHSrSNxi4568d200429PosB,GSM5386684,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,78,22.3,Disease,PD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi4775d200429DAPIA,3,354,pPDsHSrSNxi4775d200429DAPIA,GSM5386674,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,75,13.8,Disease,LBD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi4775d200429DAPIB,1,398,pPDsHSrSNxi4775d200429DAPIB,GSM5386666,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,75,13.8,Disease,LBD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi4775d200429DAPIC,0,394,pPDsHSrSNxi4775d200429DAPIC,GSM5386670,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,75,13.8,Disease,LBD,Parkinson's disease,Negative,V3,hg19
+pPDsHSrSNxi4775d200429PosA,84,126,pPDsHSrSNxi4775d200429PosA,GSM5386650,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,75,13.8,Disease,LBD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi4775d200429PosB,85,79,pPDsHSrSNxi4775d200429PosB,GSM5386668,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,75,13.8,Disease,LBD,Parkinson's disease,Positive,V3,hg19
+pPDsHSrSNxi4956d200429DAPIA,143,296,pPDsHSrSNxi4956d200429DAPIA,GSM5386659,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,92,23.3,Ctrl,Ctrl,Prostate cancer,Negative,V3,hg19
+pPDsHSrSNxi4956d200429DAPIB,217,371,pPDsHSrSNxi4956d200429DAPIB,GSM5386655,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,92,23.3,Ctrl,Ctrl,Prostate cancer,Negative,V3,hg19
+pPDsHSrSNxi4956d200429PosA,4571,58,pPDsHSrSNxi4956d200429PosA,GSM5386644,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,92,23.3,Ctrl,Ctrl,Prostate cancer,Positive,V3,hg19
+pPDsHSrSNxi4956d200429PosB,1704,31,pPDsHSrSNxi4956d200429PosB,GSM5386695,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,92,23.3,Ctrl,Ctrl,Prostate cancer,Positive,V3,hg19
+pPDsHSrSNxi5610d200429Neg,10,215,pPDsHSrSNxi5610d200429Neg,GSM5386679,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,49,7,Ctrl,Ctrl,Smoke inhalation,Negative,V3,hg19
+pPDsHSrSNxi5610d200429Pos,2067,17,pPDsHSrSNxi5610d200429Pos,GSM5386635,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Female,49,7,Ctrl,Ctrl,Smoke inhalation,Positive,V3,hg19
+pPDsHSrSNxi6173d200429DAPIA,132,385,pPDsHSrSNxi6173d200429DAPIA,GSM5386647,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,49,7.2,Ctrl,Ctrl,Not listed,Negative,V3,hg19
+pPDsHSrSNxi6173d200429PosA,991,32,pPDsHSrSNxi6173d200429PosA,GSM5386709,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,49,7.2,Ctrl,Ctrl,Not listed,Positive,V3,hg19
+pPDsHSrSNxi6173d200429PosB,1200,19,pPDsHSrSNxi6173d200429PosB,GSM5386696,Human Substantia nigra pars compacta,Substantia nigra pars compacta,Male,49,7.2,Ctrl,Ctrl,Not listed,Positive,V3,hg19

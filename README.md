@@ -11,7 +11,7 @@ PhD thesis project (computational, public data only).
 | `notebooks/` | Google Colab notebooks, run in order (step1, step2, ...) |
 | `src/` | Helper code used by the notebooks |
 | `docs/` | Analysis plan and progress log |
-| `results/` | Small result tables and figures (large outputs are kept in Google Drive) |
+| `results/` | Figures and small result tables for each step (see `results/README.md`; large outputs are kept in Google Drive) |
 
 ## Analysis steps
 
