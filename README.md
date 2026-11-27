@@ -20,6 +20,7 @@ PhD thesis project (computational, public data only).
 | 1 | `step1_extract_DA_neurons.ipynb` | Streams the GSE178265 human matrix (41,625 genes x 434,340 nuclei) and keeps DA-marker-positive nuclei (TH plus SLC6A3 or SLC18A2; 30,058) plus 20,000 random marker-negative nuclei | Done 2026-10-09 |
 | 2 | `step2_clean_and_confirm_DA.ipynb` | Matches libraries to GEO metadata; removes caudate; QC (>=500 genes, <5% mitochondrial); Harmony (by library) + Leiden; confirms DA clusters by marker-strength scores; saves 16,755 DA neurons (18 donors) and a labelled reference of 40,078 SN nuclei | Done 2026-10-23 |
 | 3 | `step3_subtypes_and_senescence.ipynb` | Downloads gene lists from their sources (Kamath Fig 1E panel, SenMayo, CellAge, MSigDB LU_AGING_BRAIN_UP); re-clusters the DA neurons with readout genes excluded and labels the 10 Kamath subtypes; scores senescence/aging; H1 (within-donor, controls), H2 (disease), H3 (age), secondary readouts and pre-specified sensitivity analyses | Done 2026-11-25 |
+| 4 | `step4_gene_drivers.ipynb` | Exploratory (decided after step 3): gene-by-gene breakdown of the SenMayo and CellAge gaps, comparison with expression-matched random gene sets, SenMayo categories | In progress |
 
 Cells added during the step 2 run (4b, 4c, 7b, 8b) are included in the notebook. Cell 7 in step 2 is kept for the record but is not used for the DA call: because step 1 selected candidates on the same markers, its detection fractions are circular. DA identity was assigned from Cell 7b (mean log-normalised marker expression per cluster).
 
