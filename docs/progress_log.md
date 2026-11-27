@@ -68,6 +68,12 @@ Purely computational, public data only. Standalone project (no links to other wo
    - Drivers (pseudobulk log2FC, 3 donors): SERPINE2 -2.19/-2.56/-2.30; TIMP2 -1.81/-1.85/-1.88; IGFBP4 -2.82/-2.60/-1.91; CTSB -1.02/-0.43/-0.70; BMP6 +2.28/+1.50/+1.27 -> replicate. KITLG 2/3; NRG1 +0.35/-1.49/-0.70 and PAPPA mixed -> NRG1 not the headline.
    - Research Companion (Step 5 section, figure, 3 Q&As, update log, next steps), thesis pipeline progress log, GitHub results/step5_replication updated 27 Nov.
 
+10. Literature check on replicated genes (27 Nov, in Research Companion 5g):
+   - SERPINE2 and TIMP2 are known markers of RESISTANT VTA dopamine neurons in human midbrain (Aguila et al. 2021, Front Mol Neurosci 14:699562) -> our gap largely reflects known vulnerable-vs-resistant identity, not senescence; not a new discovery on its own.
+   - CTSB is a PD GWAS risk gene; protective allele linked to higher CTSB expression; cathepsin B promotes alpha-synuclein fibril clearance and GCase activity in DA neurons (Jones-Tabah et al. 2024, Mol Neurodegener 19). Lower CTSB in vulnerable neurons in both datasets -> top candidate for Aim 3 MR (higher CTSB expression -> lower PD risk?).
+   - BMP-family (BMP2/7/GDF5) support DA neuron survival (O'Keeffe et al. 2017, Neuronal Signal); BMP6 not covered. IGFBP4: no DA/PD-specific evidence found.
+   - Framing to use: no stronger senescence program in vulnerable neurons; lower senescence-gene score driven by resistant-neuron identity genes (SERPINE2, TIMP2) and lower CTSB. Avoid: "protected/younger", "new discovery" for SERPINE2/TIMP2, causal claims for CTSB.
+
 ## Files in Google Drive (My Drive)
 | File | Contents |
 | --- | --- |
@@ -93,7 +99,7 @@ Purely computational, public data only. Standalone project (no links to other wo
 
 ## Next
 1. User shares steps 3-5 with the advisor (finding: no stronger senescence program in vulnerable neurons; small opposite-direction gap replicates in Siletti atlas; robust genes SERPINE2, TIMP2, IGFBP4, CTSB lower, BMP6 higher).
-2. Literature check on SERPINE2 (protease nexin-1), TIMP2, IGFBP4, CTSB, BMP6 in dopamine neurons / PD before any biological claim.
+2. Done 27 Nov (see item 10). Aim 3 priority: MR/colocalisation of CTSB expression on PD risk.
 3. Aim 1 on the Mac (R): bulk SN meta-analysis; check these genes in PD tissue.
 4. Aim 3: MR/colocalisation for the replicated genes.
 
