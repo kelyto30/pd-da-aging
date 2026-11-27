@@ -1,6 +1,6 @@
 # PD dopaminergic vulnerability thesis — project status and handoff
 
-Last updated: 27 November 2026 (Aim 2 step 4 done; next is advisor update, then replication in GSE157783)
+Last updated: 27 November 2026, 2:30 AM (Aim 2 steps 1-5 done; next: advisor update, literature check, then Aim 1)
 
 **Start every new chat here.** Key documents:
 - Thesis pipeline (plan, dataset tables, progress log): https://claude.ai/code/artifact/733fc522-8c3e-4d60-a735-159177b7e83d
@@ -59,6 +59,15 @@ Purely computational, public data only. Standalone project (no links to other wo
    - Interpretation: no stronger senescence program in vulnerable neurons; the SenMayo gap reduces to a few secreted/matrix genes (NRG1, SERPINE2, protease inhibitors). Lower NRG1/SERPINE2 in vulnerable neurons is a lead to check in the literature and in replication.
    - Research Companion (Step 4 section, update log, 2 Q&As, next steps) and thesis pipeline progress log updated 27 Nov.
 
+9. Aim 2 step 5, REPLICATION (27 Nov; notebooks step5a-step5d; every rule logged in ANALYSIS_PLAN before any scores):
+   - GSE157783 (Smajic 2022): ~75 DA neurons total (0.18% of 41,435 nuclei) -> unusable.
+   - GSE184950 (Wang 2024; 34 samples, 32 donors, 9 controls; GEO RAW.tar 1.7 GB; metadata col 'brain bank donor id', 'disease state'): step 5a streamed it, 4,837 DA candidates (controls 3,453; HBHF 2,441 over 2 samples, HctZP 741, HCT16HCV 147, others <=50). Median mito 14.5% -> cut-off raised 5%->20% before scoring. Step 5b labelling checkpoint FAILED: 3,167 neurons, labelling methods agree 34.3% vs 26.6% chance (kappa 0.10), many near-zero family calls, SOX6_AGTR1 only 7%. Stopped, no scores computed.
+   - Siletti et al. 2023 Human Brain Cell Atlas v1.0 (CELLxGENE collection 283d65eb-dd53-496d-adb7-7570c7caa443; datasets 'Dissection: Midbrain (M) - Substantia Nigra - SN' 59,505 nuclei and '... SN-RN' 49,110). Step 5c: 3 healthy men H18.30.002 (50y) 310 DA, H19.30.001 (42y) 296, H19.30.002 (29y) 159; median genes 1,300-3,200. Step 5d settings: dissections pooled per donor, authors' QC (no mito filter), Harmony by donor x dissection.
+   - Labels passed: 765 neurons, 15 subclusters, all 10 subtypes; vulnerable/resilient agreement 96% (kappa 0.90); our SOX6_AGTR1 = authors' subclusters 1875/1876; CALB1 subtypes = 1869-1874.
+   - H1 REPLICATED in direction: 3/3 donors negative, mean diff -0.0217 (95% CI -0.044 to 0.001), p_t 0.053, dz -2.4 (n vulnerable 28/85/48; resilient 187/115/84). Authors' DA subclusters only -0.020 (3/3, p 0.092); depth-adjusted -0.013 (3/3, p 0.098); transferred labels -0.006 (2/3); LOO -0.018 to -0.027; CellAge -0.015 and brain aging -0.014 (3/3; consistent with general background shift).
+   - Drivers (pseudobulk log2FC, 3 donors): SERPINE2 -2.19/-2.56/-2.30; TIMP2 -1.81/-1.85/-1.88; IGFBP4 -2.82/-2.60/-1.91; CTSB -1.02/-0.43/-0.70; BMP6 +2.28/+1.50/+1.27 -> replicate. KITLG 2/3; NRG1 +0.35/-1.49/-0.70 and PAPPA mixed -> NRG1 not the headline.
+   - Research Companion (Step 5 section, figure, 3 Q&As, update log, next steps), thesis pipeline progress log, GitHub results/step5_replication updated 27 Nov.
+
 ## Files in Google Drive (My Drive)
 | File | Contents |
 | --- | --- |
@@ -68,6 +77,8 @@ Purely computational, public data only. Standalone project (no links to other wo
 | GSE178265_samples_with_GEO.csv | 97 libraries with GEO metadata |
 | GSE178265_all_cells_clusters.csv | Per-cell cluster labels and QC |
 | GSE178265_DA_extract.zip | Step 1 output (raw, 955 MB) |
+| pd-da-aging_step5/ | GSE184950 DA candidates per sample (da_candidates/), sample table, counts |
+| pd-da-aging_step5c/ | Siletti atlas DA candidates, Siletti_DA_neurons_step5d.h5ad, replication tables and figures |
 | pd-da-aging_step4/ | tables/ (genes_SenMayo, genes_CellAge_induces, SenMayo_by_category, random_set_comparison); figures/ (4 PNGs); software_versions.txt |
 | pd-da-aging_step3/ | GSE178265_DA_neurons_step3.h5ad (265 MB; subtype, group, subcluster and all scores in obs); figures/ (4 PNGs); tables/ (16 CSVs incl. H1_result_SenMayo, H1_sensitivity, all_readouts_H1_H2_H3, subcluster_subtype_labels); gene_sets/gene_sets_2026-11-25.json; software_versions.txt |
 
@@ -81,12 +92,13 @@ Purely computational, public data only. Standalone project (no links to other wo
 - Any analysis decided after seeing step 3 results (e.g. gene-level drivers) must be labelled exploratory / post hoc.
 
 ## Next
-1. User shares step 3 + step 4 results with the advisor.
-2. Aim 2 replication in GSE157783 (Smajic et al. 2022): same H1 test (direction is the criterion) and whether NRG1/SERPINE2 again stand out. First check DA neuron numbers per control donor.
-3. Literature check on NRG1 and SERPINE2 in dopamine neurons / PD (do not claim roles before this).
+1. User shares steps 3-5 with the advisor (finding: no stronger senescence program in vulnerable neurons; small opposite-direction gap replicates in Siletti atlas; robust genes SERPINE2, TIMP2, IGFBP4, CTSB lower, BMP6 higher).
+2. Literature check on SERPINE2 (protease nexin-1), TIMP2, IGFBP4, CTSB, BMP6 in dopamine neurons / PD before any biological claim.
+3. Aim 1 on the Mac (R): bulk SN meta-analysis; check these genes in PD tissue.
+4. Aim 3: MR/colocalisation for the replicated genes.
 
 ## Remaining after that
-- Aim 2: GSE184950 if feasible; backup scoring of GSE20141 (laser-captured SNpc).
+- Aim 2 optional: backup scoring of GSE20141 (laser-captured SNpc); ASAP CRN datasets need an access application.
 - Aim 1 (Mac, R): 11 bulk SN cohorts, per-cohort limma, random-effects meta-analysis, deconvolution with our reference, aging/senescence overlap, Braak staging (GSE49036, GSE42966), held-out RNA-seq validation (GSE114517).
 - Aim 3: MR + colocalisation (PD GWAS + eQTLGen/GTEx), blood classifier (GSE99039 train; GSE6613, GSE72267 test), CMap/LINCS drug repurposing.
 - Aim 2 notebooks: Colab now runs Python 3.13; pip warning about pandas 3 vs google-colab is harmless. If 'Failed to fetch' appears, the runtime is not connected: Runtime > Manage sessions (terminate old), then Connect.
