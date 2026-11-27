@@ -1,6 +1,6 @@
 # PD dopaminergic vulnerability thesis — project status and handoff
 
-Last updated: 25 November 2026 (Aim 2 step 3 done; next is GitHub upload, then replication)
+Last updated: 27 November 2026 (Aim 2 step 4 done; next is advisor update, then replication in GSE157783)
 
 **Start every new chat here.** Key documents:
 - Thesis pipeline (plan, dataset tables, progress log): https://claude.ai/code/artifact/733fc522-8c3e-4d60-a735-159177b7e83d
@@ -49,6 +49,15 @@ Purely computational, public data only. Standalone project (no links to other wo
    - H3 (exploratory): SenMayo rho 0.09 (p 0.85); LU_AGING_BRAIN_UP rho -0.85 (p 0.016, q 0.19); CDKN1A pseudobulk rho -0.79 (p 0.033, q 0.21).
    - Interpretation: baseline senescence program does not explain SOX6_AGTR1 vulnerability; small, robust difference in the opposite direction; SenMayo leans on secreted/immune genes neurons barely express, so identity effects are possible; not evidence of protection.
    - Research Companion (Step 3 section, update log, 5 new committee Q&As, next steps) and thesis pipeline progress log updated 25 Nov.
+7. GitHub now committed by Claude directly (25 Nov): repo made public by the user (advisor fine with it); Claude GitHub App installed on kelyto30 (all repositories); claude.ai GitHub connector is kelyto30. Commits ab6fc63 (step 3) and later.
+8. Aim 2 step 4, EXPLORATORY (decided after step 3; logged in ANALYSIS_PLAN v2.3 before running; Colab, 27 Nov; notebook step4_gene_drivers.ipynb):
+   - Same 7 control donors, >=20 neurons per group. Per gene: detection, donor-averaged log-normalised difference, contribution to set gap, pseudobulk log2FC with paired t-test (BH within set).
+   - SenMayo (105 genes): 80 lower / 25 higher in vulnerable; 30 lower in all 7 donors, 4 higher in all 7; 60 genes detected in <10% of neurons in both groups; 14 genes = 80% of the gap. Drivers: NRG1 (detected 98% vs 99%, log2FC -1.50, ~1/3 of gap), SERPINE2 (46% vs 76%, -2.20), PAPPA (-0.80), TIMP2 (-1.11), CTSB (-0.62), IGFBP4 (11% vs 36%, -2.44); higher: BMP6 (+1.07), KITLG (+1.83), EGF.
+   - CellAge (359 genes): 262 lower / 97 higher; top lower genes are housekeeping (PEBP1, CKB, RPS14, RPL11, ATRX, SOD2); higher are neuronal (ITPR1, GRIK2, SORBS2).
+   - vs 1,000 expression-matched random sets (22,608 genes detected in >1% of neurons, 25 bins): SenMayo -0.0397 vs mean -0.0090 (95% -0.026 to 0.009), 0.1% as low; without NRG1 -0.0269, 1.4%; without NRG1+SERPINE2 -0.0220, 4.9%. CellAge -0.0159 vs -0.0136, 31% (background).
+   - SenMayo categories: protease inhibitors (10 genes, all lower) and growth factors drive the gap; cytokines/chemokines (23 genes, ~7% detected) contribute almost nothing.
+   - Interpretation: no stronger senescence program in vulnerable neurons; the SenMayo gap reduces to a few secreted/matrix genes (NRG1, SERPINE2, protease inhibitors). Lower NRG1/SERPINE2 in vulnerable neurons is a lead to check in the literature and in replication.
+   - Research Companion (Step 4 section, update log, 2 Q&As, next steps) and thesis pipeline progress log updated 27 Nov.
 
 ## Files in Google Drive (My Drive)
 | File | Contents |
@@ -59,6 +68,7 @@ Purely computational, public data only. Standalone project (no links to other wo
 | GSE178265_samples_with_GEO.csv | 97 libraries with GEO metadata |
 | GSE178265_all_cells_clusters.csv | Per-cell cluster labels and QC |
 | GSE178265_DA_extract.zip | Step 1 output (raw, 955 MB) |
+| pd-da-aging_step4/ | tables/ (genes_SenMayo, genes_CellAge_induces, SenMayo_by_category, random_set_comparison); figures/ (4 PNGs); software_versions.txt |
 | pd-da-aging_step3/ | GSE178265_DA_neurons_step3.h5ad (265 MB; subtype, group, subcluster and all scores in obs); figures/ (4 PNGs); tables/ (16 CSVs incl. H1_result_SenMayo, H1_sensitivity, all_readouts_H1_H2_H3, subcluster_subtype_labels); gene_sets/gene_sets_2026-11-25.json; software_versions.txt |
 
 ## Decisions
@@ -71,14 +81,14 @@ Purely computational, public data only. Standalone project (no links to other wo
 - Any analysis decided after seeing step 3 results (e.g. gene-level drivers) must be labelled exploratory / post hoc.
 
 ## Next
-1. User uploads to GitHub: notebooks/step3_subtypes_and_senescence.ipynb, docs/ANALYSIS_PLAN.md (v2.2), docs/progress_log.md (if kept in repo).
-2. User shares the step 3 result with the advisor.
-3. Aim 2 replication in GSE157783 (Smajic et al. 2022): same H1 test; direction is the criterion. Check how many DA neurons and control donors it has first.
-4. Exploratory (post hoc): which SenMayo/CellAge genes drive the vulnerable-minus-resilient difference.
+1. User shares step 3 + step 4 results with the advisor.
+2. Aim 2 replication in GSE157783 (Smajic et al. 2022): same H1 test (direction is the criterion) and whether NRG1/SERPINE2 again stand out. First check DA neuron numbers per control donor.
+3. Literature check on NRG1 and SERPINE2 in dopamine neurons / PD (do not claim roles before this).
 
 ## Remaining after that
 - Aim 2: GSE184950 if feasible; backup scoring of GSE20141 (laser-captured SNpc).
 - Aim 1 (Mac, R): 11 bulk SN cohorts, per-cohort limma, random-effects meta-analysis, deconvolution with our reference, aging/senescence overlap, Braak staging (GSE49036, GSE42966), held-out RNA-seq validation (GSE114517).
 - Aim 3: MR + colocalisation (PD GWAS + eQTLGen/GTEx), blood classifier (GSE99039 train; GSE6613, GSE72267 test), CMap/LINCS drug repurposing.
+- Aim 2 notebooks: Colab now runs Python 3.13; pip warning about pandas 3 vs google-colab is harmless. If 'Failed to fetch' appears, the runtime is not connected: Runtime > Manage sessions (terminate old), then Connect.
 - Admin: advisor/committee approval of this project (share proposal + analysis plan); IRB not-human-subjects check.
 - Writing: chapters and papers.

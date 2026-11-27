@@ -56,6 +56,7 @@ These were added after seeing that H1 went in the opposite direction. They expla
 - **Gene-level drivers (step 4).** In the same 7 control donors, per gene of SenMayo and CellAge: detection in each group, donor-averaged log-normalised difference, its contribution to the set gap, and pseudobulk log2 fold change with a paired t-test across donors (Benjamini–Hochberg within each set).
 - **Specificity.** The set's mean gene difference compared with 1,000 random gene sets matched gene-for-gene on expression level (25 bins, genes detected in more than 1% of neurons).
 - **SenMayo categories.** The gap split by the category given in the SenMayo supplementary table.
+- **Leave-out check (added after seeing the gene-level results).** The specificity comparison repeated without NRG1, and without NRG1 and SERPINE2, the two largest drivers.
 
 ## Negative-result policy
 A null H1 is reported as a finding. Gene sets, thresholds and tests are not changed after seeing results unless the change is logged below with a reason.
