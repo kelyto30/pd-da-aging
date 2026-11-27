@@ -24,7 +24,7 @@ PhD thesis project (computational, public data only).
 | 5a | `step5a_replication_feasibility.ipynb` | Replication feasibility in GSE184950: streams each sample from GEO, counts dopamine-neuron candidates per donor and keeps them | Done 2026-11-27 |
 | 5b | `step5b_replication.ipynb` | H1 replication in GSE184950 control donors (protocol in `docs/ANALYSIS_PLAN.md`), with label transfer from GSE178265, sensitivity checks and the step 4 driver genes | Stopped at the labelling checkpoint 2026-11-27: subtypes not resolvable in GSE184950 (no scores computed) |
 | 5c | `step5c_siletti_feasibility.ipynb` | Replication feasibility in the Siletti et al. 2023 human brain atlas (CELLxGENE): dopamine neurons per healthy donor | Done 2026-11-27: 3 donors, 159 to 310 candidates each |
-| 5d | `step5d_siletti_replication.ipynb` | H1 replication in the Siletti atlas (same protocol and labelling checkpoint as step 5b) | In progress |
+| 5d | `step5d_siletti_replication.ipynb` | H1 replication in the Siletti atlas (same protocol and labelling checkpoint as step 5b) | Done 2026-11-27: replicated in direction (3 of 3 donors; mean difference −0.0217, p = 0.053) |
 
 Cells added during the step 2 run (4b, 4c, 7b, 8b) are included in the notebook. Cell 7 in step 2 is kept for the record but is not used for the DA call: because step 1 selected candidates on the same markers, its detection fractions are circular. DA identity was assigned from Cell 7b (mean log-normalised marker expression per cluster).
 

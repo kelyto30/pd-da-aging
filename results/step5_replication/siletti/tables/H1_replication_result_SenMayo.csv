@@ -1,0 +1,12 @@
+,0
+donors,3
+donors_negative,3
+sign_test_p,0.25
+mean_diff,-0.021724422471560877
+ci_low,-0.04419240649169909
+ci_high,0.0007435615485773331
+p_ttest,0.05320820432834694
+cohens_dz,-2.401926985463467
+p_wilcoxon,0.25
+verdict,REPLICATED (same direction as GSE178265)
+min_cells,10
