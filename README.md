@@ -22,7 +22,8 @@ PhD thesis project (computational, public data only).
 | 3 | `step3_subtypes_and_senescence.ipynb` | Downloads gene lists from their sources (Kamath Fig 1E panel, SenMayo, CellAge, MSigDB LU_AGING_BRAIN_UP); re-clusters the DA neurons with readout genes excluded and labels the 10 Kamath subtypes; scores senescence/aging; H1 (within-donor, controls), H2 (disease), H3 (age), secondary readouts and pre-specified sensitivity analyses | Done 2026-11-25 |
 | 4 | `step4_gene_drivers.ipynb` | Exploratory (decided after step 3): gene-by-gene breakdown of the SenMayo and CellAge gaps, comparison with expression-matched random gene sets, SenMayo categories | Done 2026-11-27 |
 | 5a | `step5a_replication_feasibility.ipynb` | Replication feasibility in GSE184950: streams each sample from GEO, counts dopamine-neuron candidates per donor and keeps them | Done 2026-11-27 |
-| 5b | `step5b_replication.ipynb` | H1 replication in GSE184950 control donors (protocol in `docs/ANALYSIS_PLAN.md`), with label transfer from GSE178265, sensitivity checks and the step 4 driver genes | In progress |
+| 5b | `step5b_replication.ipynb` | H1 replication in GSE184950 control donors (protocol in `docs/ANALYSIS_PLAN.md`), with label transfer from GSE178265, sensitivity checks and the step 4 driver genes | Stopped at the labelling checkpoint 2026-11-27: subtypes not resolvable in GSE184950 (no scores computed) |
+| 5c | `step5c_siletti_feasibility.ipynb` | Replication feasibility in the Siletti et al. 2023 human brain atlas (CELLxGENE): dopamine neurons per healthy donor | In progress |
 
 Cells added during the step 2 run (4b, 4c, 7b, 8b) are included in the notebook. Cell 7 in step 2 is kept for the record but is not used for the DA call: because step 1 selected candidates on the same markers, its detection fractions are circular. DA identity was assigned from Cell 7b (mean log-normalised marker expression per cluster).
 
