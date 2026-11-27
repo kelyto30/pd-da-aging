@@ -58,6 +58,17 @@ These were added after seeing that H1 went in the opposite direction. They expla
 - **SenMayo categories.** The gap split by the category given in the SenMayo supplementary table.
 - **Leave-out check (added after seeing the gene-level results).** The specificity comparison repeated without NRG1, and without NRG1 and SERPINE2, the two largest drivers.
 
+## Replication protocol (GSE184950), fixed 2026-11-27 before any GSE184950 scores were computed
+Fixed after step 5a counted dopamine-neuron candidates per donor (no scores or subtype labels had been computed).
+- **Data and QC.** The dopamine-neuron candidates saved in step 5a (TH plus SLC6A3 or SLC18A2), filtered as in step 2 (at least 500 genes, under 5% mitochondrial reads). Donor = brain bank donor id; two samples from one donor are combined.
+- **Subtypes.** As in step 3: re-cluster (readout genes excluded, Harmony by sample, Leiden 1.0) and label by the Kamath Figure 1E panel. Sensitivity: labels transferred from the 16,755 labelled GSE178265 neurons (logistic regression on shared variable genes).
+- **Scores.** The same gene lists as step 3 (the saved step 3 file, no new download), marker genes removed, scanpy score_genes.
+- **Inclusion.** Control donors with at least 20 neurons in each group; 10 if fewer than 5 qualify.
+- **Replication criterion.** The direction found in GSE178265: vulnerable minus resilient SenMayo below zero. Replicated if the donor-mean difference is negative and more than half of the qualifying donors are negative. Paired t-test, Wilcoxon and sign test are reported; with 3 to 5 donors they are descriptive.
+- **Sensitivity.** Transferred labels; depth-adjusted score; leave-one-donor-out; CellAge and brain-aging sets.
+- **Exploratory (from step 4).** Pseudobulk direction of NRG1, SERPINE2, TIMP2, PAPPA, CTSB, IGFBP4, BMP6 and KITLG per donor.
+- **Not replicated here.** H2 and H3: disease donors have too few dopamine neurons (median 4 to 8 per sample).
+
 ## Negative-result policy
 A null H1 is reported as a finding. Gene sets, thresholds and tests are not changed after seeing results unless the change is logged below with a reason.
 
@@ -69,3 +80,4 @@ A null H1 is reported as a finding. Gene sets, thresholds and tests are not chan
 | 2026-11-25 | Version 2.2, made at the subtype-labelling checkpoint, **before any scores were computed**. Labels accepted at Leiden resolution 1.0 (21 sub-clusters, all 10 Kamath subtypes found, each showing its defining marker). Added the high-confidence-labels sensitivity analysis. Recorded the pre-specified cross-check: 68% of SOX6_AGTR1 neurons fall in step 2 cluster 14, but only 36% of CALB1 neurons fall in cluster 18 (CALB1_CALCR mainly in cluster 17; CALB1_CRYM_CCDC68 and CALB1_PPP1R17 mainly in cluster 15). | Two sub-clusters had borderline labels (sub-cluster 9, SOX6_AGTR1 vs SOX6_DDT, margin 0.11; sub-cluster 12, CALB1 family call −0.46). The step 2 clusters were coarse, so the CALB1 split across clusters 15–18 reflects the finer DA-only clustering rather than mislabelling; it is reported, not corrected. |
 | 2026-11-26 | Version 2.3: section "Exploratory analyses" added. | Decided **after** seeing the step 3 results (H1 significant in the opposite direction), to find which genes drive the gap and whether it is specific to senescence genes. Labelled exploratory. |
 | 2026-11-27 | Replication dataset: GSE184950 (Wang et al. 2024; 32 donors, 9 controls, ~316,000 nuclei) becomes the primary replication set, replacing GSE157783. A feasibility step (5a) first counts dopamine neurons per donor; the H1 replication runs only if enough control donors have both groups (same 20/10-neuron rule). | GSE157783 (Smajić et al. 2022) contains only ~0.18% dopamine neurons of 41,435 nuclei (~75 in total), too few for a within-donor subtype test. Decided from the published paper, before any GSE184950 data were examined. |
+| 2026-11-27 | Replication protocol for GSE184950 added (section above). | Fixed after the step 5a neuron counts and before any GSE184950 subtype labels or scores were computed. The direction criterion refers to the direction observed in GSE178265 (negative). |
